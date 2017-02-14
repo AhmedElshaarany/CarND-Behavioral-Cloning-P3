@@ -121,9 +121,7 @@ The final model architecture (model.py lines 83-103) consisted of a convolution 
 
 ####3. Training Process
 
-I randomly shuffled the data set and put 30% of the data into a validation set. 
-
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 60. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+30% of the data into a validation set. I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 60. I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
 ####4. Working on Track 2
 
