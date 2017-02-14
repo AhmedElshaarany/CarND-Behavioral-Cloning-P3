@@ -27,7 +27,7 @@ My project includes the following files:
 
 [//]: # (Image References)
 
-[image1]: (./examples/cropped_center_2016_12_01_13_30_48_404.jpg "Cropped Image")
+[image1]: ./examples/cropped_center_2016_12_01_13_30_48_404.jpg "Cropped Image"
 [image2]: ./examples/flipped_center_2016_12_01_13_30_48_404.jpg "Flipped Image"
 [image3]: ./examples/originaly_center_2016_12_01_13_30_48_404.jpg "Original Image"
 [image4]: ./examples/BeforePP.png "Histogram of Data Before Preprocessing"
@@ -80,9 +80,7 @@ To make the model's behavior more uniform, I filtered out most of the images tha
 Also, to make the model be able to deal with sharp turns efficiently, I flipped images with a steering angle that is larger than 0.2 or less than -0.2 and negated their corresponding steering angle values and added them to the dataset. This was also done in dataProcessing.py
 
 ![alt text][image3]
-*Image Before Flipping*
 ![alt text][image2]
-*Image After Flipping*
 
 For details about how I used the training data, see the next section. 
 
