@@ -108,3 +108,7 @@ The final model architecture (model.py lines 18-24) consisted of a convolution n
 I randomly shuffled the data set and put 30% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 60. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+####4. Working on Track 2
+
+With some extra preprocessing and model tuning and modification, I was able to create another model that is able to complete both tracks, but with less performance on track 1 than the previous model. The files used for this model were driveT2.py, modelT2.json, and modelT2.h5
