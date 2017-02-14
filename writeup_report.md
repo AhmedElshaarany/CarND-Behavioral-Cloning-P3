@@ -30,8 +30,8 @@ My project includes the following files:
 [image1]: ./examples/cropped_center_2016_12_01_13_30_48_404.jpg "Cropped Image"
 [image2]: ./examples/flipped_center_2016_12_01_13_30_48_404.jpg "Flipped Image"
 [image3]: ./examples/originaly_center_2016_12_01_13_30_48_404.jpg "Original Image"
-[image4]: ./examples/BeforePP.png "Histogram of Data Before Preprocessing"
-[image5]: ./examples/AfterPP.png "Histogram of Data Before Preprocessing"
+[image4]: ./examples/bpp.png "Histogram of Data Before Preprocessing"
+[image5]: ./examples/app.png "Histogram of Data Before Preprocessing"
 
 ####2. Submssion includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
