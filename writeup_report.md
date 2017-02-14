@@ -25,6 +25,14 @@ My project includes the following files:
 * model.h5 containing a trained convolution neural network 
 * writeup_report.md summarizing the results
 
+[//]: # (Image References)
+
+[image1]: ./examples/cropped_center_2016_12_01_13_30_48_404.jpg "Cropped Image"
+[image2]: ./examples/flipped_center_2016_12_01_13_30_48_404.jpg "Flipped Image"
+[image3]: ./examples/center_2016_12_01_13_30_48_404.jpg "Original Image"
+[image4]: ./examples/BeforePP.png "Histogram of Data Before Preprocessing"
+[image5]: ./examples/AfterPP.png "Histogram of Data Before Preprocessing"
+
 ####2. Submssion includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 
@@ -58,12 +66,23 @@ I used the training data provided by Udacity, it had data that was chosen to kee
 
 After seeing the images, I noticed that the sky and car hood were part of the captured images by the camera. Since this data is irrelevant to the steering angle, I cropped them out of the images that are fed to the model. Below is an example image before and after cropping
 
+![alt text][image3]
+![alt text][image1]
+
 In addition, to improve the driving behavior in cases where the car went off track, I had to visualize the data set, so I plotted the historgram for the steering angles. The histogtam showed that the test data was biased towards the steering angles in the range of -0.1 to 0 as shown below. 
 
+![alt text][image4]
 
 To make the model's behavior more uniform, I filtered out most of the images that provide small variation in the steering angle by randomly choosing images with steering angles close to 0. Also, udacity's data provided left and right images, so to provide more data, I used those images with by adding a steering compenstation factor of 0.2 to steering angle of the left images, and subtracting it from the right images. This lead to the histogram shown below. The data processing was done in the dataProcessing.py file.
 
-For details about how I created the used the training data, see the next section. 
+![alt text][image5]
+
+Also, to make the model be able to deal with sharp turns efficiently, I flipped images with a steering angle that is larger than 0.2 or less than -0.2 and negated their corresponding steering angle values and added them to the dataset. This was also done in dataProcessing.py
+
+![alt text][image3]
+![alt text][image2]
+
+For details about how I used the training data, see the next section. 
 
 ###Model Architecture and Training Strategy
 
