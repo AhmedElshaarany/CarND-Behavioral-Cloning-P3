@@ -64,10 +64,6 @@ def main(_):
     # Split data into training and test datasets
     X_train, X_test, y_train, y_test = train_test_split(X_normalized, y_data, test_size = 0.3, random_state = 0)
 
-    
-    # Split test dataset into validation and test datasets
-    #X_validation, X_test, y_validation, y_test = train_test_split(X_test, y_test, test_size = 0.5, random_state = 0)
-
     print("Training, Testing, and Validation data ready")
 
     # Image shape 
