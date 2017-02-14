@@ -68,7 +68,6 @@ After seeing the images, I noticed that the sky and car hood were part of the ca
 
 ![alt text][image3]
 
-
 ![alt text][image1]
 
 In addition, to improve the driving behavior in cases where the car went off track, I had to visualize the data set, so I plotted the historgram for the steering angles. The histogtam showed that the test data was biased towards the steering angles in the range of -0.1 to 0 as shown below. 
