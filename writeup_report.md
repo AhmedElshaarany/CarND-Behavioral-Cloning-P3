@@ -67,7 +67,6 @@ I used the training data provided by Udacity, it had data that was chosen to kee
 After seeing the images, I noticed that the sky and car hood were part of the captured images by the camera. Since this data is irrelevant to the steering angle, I cropped them out of the images that are fed to the model. Below is an example image before and after cropping
 
 ![alt text][image3]
-
 ![alt text][image1]
 
 In addition, to improve the driving behavior in cases where the car went off track, I had to visualize the data set, so I plotted the historgram for the steering angles. The histogtam showed that the test data was biased towards the steering angles in the range of -0.1 to 0 as shown below. 
@@ -82,7 +81,6 @@ Also, to make the model be able to deal with sharp turns efficiently, I flipped 
 
 ![alt text][image3]
 *Image Before Flipping*
-
 ![alt text][image2]
 *Image After Flipping*
 
