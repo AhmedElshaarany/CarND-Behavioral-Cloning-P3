@@ -27,7 +27,7 @@ My project includes the following files:
 
 [//]: # (Image References)
 
-[image1]: ./examples/cropped_center_2016_12_01_13_30_48_404.jpg "Cropped Image"
+[image1]: (./examples/cropped_center_2016_12_01_13_30_48_404.jpg "Cropped Image")
 [image2]: ./examples/flipped_center_2016_12_01_13_30_48_404.jpg "Flipped Image"
 [image3]: ./examples/originaly_center_2016_12_01_13_30_48_404.jpg "Original Image"
 [image4]: ./examples/BeforePP.png "Histogram of Data Before Preprocessing"
