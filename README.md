@@ -100,8 +100,16 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 ####2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
-
+The final model architecture (model.py lines 83-103) consisted of a convolution neural network with the following layers and layer sizes:
+1- 2x2 Convolutional layer and depth 16 followed by a ReLU activation layer
+2- MaxPool layer with kernel 2x2 and stride 2x2
+3- Dropout layer with an aggressive 50% drop probability
+4- 3x3 Convolutional layer and depth 32 followed by a ReLU activation layer
+5- MaxPool layer with kernel 2x2 and stride 2x2
+6- 2x2 Convolutional layer and depth 64 followed by a ReLU activation layer
+7- MaxPool layer with kernel 2x2 and stride 2x2
+8- Dropout layer with an aggressive 50% drop probability
+9- Five fully connected layers along with one final dropout layer
 
 ####3. Training Process
 
